@@ -1,0 +1,40 @@
+$fontColor: rgba(0, 0, 0, 0.5);
+
+.button {
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid $fontColor;
+  color: $fontColor;
+  font-size: 25px;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 3px 5px rgba(11, 11, 11, 0.38);
+    z-index: 50;
+  }
+  &:active {
+    transform: translateY(0px);
+    box-shadow: none;
+  }
+
+  &.plus,
+  &.minus {
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    min-height: 40px;
+  }
+
+  &.cross {
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    min-height: 20px;
+    font-size: 16px;
+    padding: 0 0 2px 0;
+    &:hover {
+      background: red;
+    }
+  }
+}

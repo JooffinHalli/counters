@@ -1,0 +1,50 @@
+$fontColor: rgba(0, 0, 0, 0.5);
+$outerShadow: rgba(50, 50, 93, 0.5) 0px 13px 27px -5px, rgba(0, 0, 0, 0.5) 0px 8px 16px -8px;
+
+.counter {
+  opacity: 0;
+  animation: animation 0.5s forwards;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  height: 70px;
+  width: 300px;
+  min-width: 300px;
+  color: $fontColor;
+  border: 1px solid $fontColor;
+  border-radius: 5px;
+  box-shadow: $outerShadow;
+  margin: 20px;
+
+  .order {
+    height: 100%;
+    width: 50px;
+    min-width: 50px;
+    font-size: 25px;
+    border-right: 1px solid $fontColor;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .red {
+    color: red;
+  }
+  .cross {
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+  }
+  .value {
+    max-width: 100px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+}
+
+@keyframes animation {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}

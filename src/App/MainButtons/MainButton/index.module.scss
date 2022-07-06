@@ -1,0 +1,56 @@
+$fontColor: rgba(0, 0, 0, 0.5);
+
+.addOne,
+.deleteFirst,
+.deleteLast,
+.deleteAll {
+  opacity: 0;
+  animation: animation 0.7s forwards;
+  height: 70px;
+  width: 300px;
+  color: $fontColor;
+  border: 1px solid $fontColor;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+  cursor: pointer;
+  &:hover {
+    color: white;
+    background: $fontColor;
+  }
+  &:active {
+    color: $fontColor;
+    background: white;
+  }
+}
+
+@keyframes animation {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.empty {
+  height: 70px;
+  width: 300px;
+  margin: 10px 0;
+}
+
+.max {
+  height: 70px;
+  width: 300px;
+  color: $fontColor;
+  border: 1px solid red;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+}

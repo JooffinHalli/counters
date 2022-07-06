@@ -1,0 +1,33 @@
+$innerShadowRight: rgba(50, 50, 93, 0.5) -7px 5px 60px -12px inset, rgba(0, 0, 0, 0.5) -10px -5px 30px -18px inset;
+$innerShadowLeft: rgba(50, 50, 93, 0.5) 7px 5px 60px -12px inset, rgba(0, 0, 0, 0.5) 10px -5px 30px -18px inset;
+
+.app {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  overflow: hidden;
+  overflow: auto;
+
+  .leftSide {
+    box-sizing: content-box;
+    box-shadow: $innerShadowRight;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-width: 400px;
+  }
+  .middleSide {
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    min-width: 400px;
+  }
+  .rightSide {
+    box-shadow: $innerShadowLeft;
+    display: flex;
+    justify-content: center;
+    min-width: 400px;
+  }
+
+}
